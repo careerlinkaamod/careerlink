@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <title>Careerlink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./css/vendors/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css" />
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight">
+
+    <!--aamod-->
+    <div class="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+
+        <!--aamod-->
+        <header class="absolute w-full z-30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="flex items-center justify-between h-16 md:h-20">
+        
+                    <!--aamod-->
+                    <div class="flex-1">
+                        <!--aamod-->
+                        <a class="inline-flex" href="index.html" aria-label="Cruip">
+                            <img class="max-w-none" src="./images/cllogo.png" width="158" height="158" alt="Stellar">
+                        </a>
+                    </div>
+        
+                    <!--aamod-->
+                    <nav class="hidden md:flex md:grow">
+        
+                        <!--aamod-->
+                        <ul class="flex grow justify-center flex-wrap items-center">
+                            <li>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="">About</a>
+                            </li>
+                            <li>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="">FAQs</a>
+                            </li>
+                            <li>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="">Network</a>
+                            </li>
+                            <li>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="">Updates</a>
+                            </li>
+                        </ul>
+        
+                    </nav>
+        
+                    <!--aamod-->
+                    <ul class="flex-1 flex justify-end items-center">
+                        <li>
+                            <a class="font-medium text-sm text-slate-300 hover:text-white whitespace-nowrap transition duration-150 ease-in-out" href="signin.html">Sign in</a>
+                        </li>
+                        <li class="ml-6">
+                            <a class="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out w-full group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="signup.html">
+                                <span class="relative inline-flex items-center">
+                                    Sign up <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <!--aamod-->
+                    <div class="md:hidden flex items-center ml-4" x-data="{ expanded: false }">
+        
+                        <!--aamod-->
+                        <button class="group inline-flex w-8 h-8 text-slate-300 hover:text-white text-center items-center justify-center transition" aria-controls="mobile-nav" :aria-expanded="expanded" @click.stop="expanded = !expanded">
+                            <span class="sr-only">Menu</span>
+                            <svg class="w-4 h-4 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] -translate-y-[5px] group-[[aria-expanded=true]]:rotate-[315deg] group-[[aria-expanded=true]]:translate-y-0" y="7" width="16" height="2" rx="1"></rect>
+                                <rect class="origin-center group-[[aria-expanded=true]]:rotate-45 transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]" y="7" width="16" height="2" rx="1"></rect>
+                                <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] translate-y-[5px] group-[[aria-expanded=true]]:rotate-[135deg] group-[[aria-expanded=true]]:translate-y-0" y="7" width="16" height="2" rx="1"></rect>
+                            </svg>
+                        </button>                             
+        
+                        <!--aamod-->
+                        <nav id="mobile-nav" class="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" x-ref="mobileNav" :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
+                            <ul class="border border-transparent [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] rounded-lg px-4 py-1.5">
+                                <li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="integrations.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="pricing.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="customers.html">Network</a>
+                                </li>
+                                <li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="changelog.html">Updates</a>
+                                </li>
+                            </ul>
+                        </nav>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </header>
+
+        <!--aamod-->
+        <main class="grow">
+
+            <!--aamod-->
+            <section>
+                <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+
+                    <!--aamod-->
+                    <div class="absolute inset-0 -z-10" aria-hidden="true">
+                        <canvas data-particle-animation></canvas>
+                    </div>
+
+                    <!--aamod-->
+                    <div class="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
+                        <div class="absolute left-1/2 -translate-x-1/2 bottom-0 -z-10">
+                            <img src="./images/glow-bottom.svg" class="max-w-none" width="2146" height="774" alt="Hero Illustration">
+                        </div>
+                    </div>
+
+                    <div class="pt-32 pb-16 md:pt-52 md:pb-32">
+
+                        <!--aamod-->
+                        <div class="max-w-3xl mx-auto text-center">
+                            <div class="mb-6" data-aos="fade-down">
+                                
+                            </div>
+                            <h1 class="h1 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4" data-aos="fade-down">Link your future to success<br>with AI-driven career network</h1>
+                            <p class="text-lg text-slate-300 mb-8" data-aos="fade-down" data-aos-delay="200">Join a dynamic community empowered by AI tools & expert mentorship to tailor your unique career path. When the conventional route isn’t for you, redefine productivity with CareerLink.</p>
+                            <div class="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-down" data-aos-delay="400">
+                                <div>
+                                    <a class="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group" href="#0">
+                                        Get Started <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="btn text-slate-200 hover:text-white bg-slate-900 bg-opacity-25 hover:bg-opacity-30 w-full transition duration-150 ease-in-out" href="#0">
+                                        <svg class="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                            <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
+                                        </svg>
+                                        <span>Read the docs</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section>
+                <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+
+                    <!--aamod-->
+                    <div class="absolute inset-0 max-w-6xl mx-auto px-4 sm:px-6">
+                        <div class="absolute inset-0 -z-10" aria-hidden="true">
+                            <canvas data-particle-animation data-particle-quantity="5"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="py-12 md:py-16">
+                        <div class="overflow-hidden">
+
+                            <div class="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                                <ul class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 1">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 2">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 3">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 4">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 5">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 6">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 7">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 8">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 9">
+                                    </li>
+                                </ul>
+                                <ul class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8" aria-hidden="true">
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 1">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 2">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 3">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 4">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 5">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 6">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 7">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client1.png" alt="Client 8">
+                                    </li>
+                                    <li>
+                                        <img src="./images/client2.png" alt="Client 9">
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section>
+                <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+
+                    <!--aamod-->
+                    <div class="absolute inset-0 -z-10 -mx-28 rounded-t-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
+                        <div class="absolute left-1/2 -translate-x-1/2 top-0 -z-10">
+                            <img src="./images/glow-top.svg" class="max-w-none" width="1404" height="658" alt="Features Illustration">
+                        </div>
+                    </div>
+
+                    <div class="pt-16 pb-12 md:pt-52 md:pb-20">
+
+                        <div x-data="{ tab: '1' }">
+
+                            <!--aamod-->
+                            <div class="max-w-xl mx-auto md:max-w-none flex flex-col md:flex-row md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-8 space-y-reverse md:space-y-0">
+
+                                <!--aamod-->
+                                <div class="md:w-7/12 lg:w-1/2 order-1 md:order-none max-md:text-center" data-aos="fade-down">
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-3">Empower Your Career</div>
+                                    </div>
+                                    <h3 class="h3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">Built Different, With Purpose!</h3>
+                                    <p class="text-lg text-slate-400 mb-8">Our platform isn’t just another social network—it’s a community shaped by bold, unwavering values:</p>
+                                    <div class="mt-8 max-w-xs max-md:mx-auto space-y-2">
+                                        <button
+                                            class="flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100"
+                                            :class="tab !== '1' ? 'border-slate-700 opacity-50' : 'border-purple-700 shadow shadow-purple-500/25'"
+                                            @click.prevent="tab = '1'"
+                                        >
+                                            <svg class="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm0 14V2H2v12h12Zm-3-7H5a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0 4H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z" />
+                                            </svg>
+                                            <span>Centered on You</span>
+                                        </button>
+                                        <button
+                                            class="flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100"
+                                            :class="tab !== '2' ? 'border-slate-700 opacity-50' : 'border-purple-700 shadow shadow-purple-500/25'"
+                                            @click.prevent="tab = '2'"
+                                        >
+                                            <svg class="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M2 6H0V2a2 2 0 0 1 2-2h4v2H2v4ZM16 6h-2V2h-4V0h4a2 2 0 0 1 2 2v4ZM14 16h-4v-2h4v-4h2v4a2 2 0 0 1-2 2ZM6 16H2a2 2 0 0 1-2-2v-4h2v4h4v2Z" />
+                                            </svg>
+                                            <span>Careers Evolve, So Do We</span>
+                                        </button>
+                                        <button
+                                            class="flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100"
+                                            :class="tab !== '3' ? 'border-slate-700 opacity-50' : 'border-purple-700 shadow shadow-purple-500/25'"
+                                            @click.prevent="tab = '3'"
+                                        >
+                                            <svg class="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z" />
+                                            </svg>
+                                            <span>Experience Above Everything</span>
+                                        </button>
+                                        <button
+                                        class="flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100"
+                                        :class="tab !== '4' ? 'border-slate-700 opacity-50' : 'border-purple-700 shadow shadow-purple-500/25'"
+                                        @click.prevent="tab = '4'"
+                                    >
+                                        <svg class="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.2 0 3 2.2 3 5c0 1.5.7 2.9 1.8 3.8.4.3.7.7.9 1.2h4.6c.2-.5.5-.9.9-1.2C12.3 7.9 13 6.5 13 5c0-2.8-2.2-5-5-5zm-2 11v1h4v-1H6zm0 2v1h4v-1H6zm2.5-11c1.9 0 3.5 1.6 3.5 3.5 0 1.2-.6 2.2-1.5 2.9-.6.4-1 1-1.2 1.6H6.7c-.2-.6-.6-1.2-1.2-1.6-.9-.7-1.5-1.7-1.5-2.9C4 3.6 5.6 2 7.5 2z"/>
+                                        </svg>
+                                        <span>Uncovering Hidden Potential</span>
+                                    </button>                                         
+                                    </div>
+                                </div>
+
+                                <!--aamod-->
+                                <div class="md:w-5/12 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="relative py-24 -mt-12">
+
+                                        <!--aamod-->
+                                        <div class="absolute inset-0 -z-10">
+                                            <canvas data-particle-animation data-particle-quantity="8" data-particle-staticity="30"></canvas>
+                                        </div>
+
+                                        <div class="flex items-center justify-center">
+                                            <div class="relative w-48 h-48 flex justify-center items-center">
+                                                <!--aamod-->
+                                                <svg class="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 will-change-transform pointer-events-none blur-md" width="480" height="480" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient id="pulse-a" x1="50%" x2="50%" y1="100%" y2="0%">
+                                                            <stop offset="0%" stop-color="#DB2777" />
+                                                            <stop offset="76.382%" stop-color="#FAF5FF" />
+                                                            <stop offset="100%" stop-color="#6366F1" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <g fill-rule="evenodd">
+                                                        <path class="pulse" fill="url(#pulse-a)" fill-rule="evenodd" d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"></path>
+                                                        <path class="pulse pulse-1" fill="url(#pulse-a)" fill-rule="evenodd" d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"></path>
+                                                        <path class="pulse pulse-2" fill="url(#pulse-a)" fill-rule="evenodd" d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"></path>
+                                                    </g>
+                                                </svg>
+                                                <!--aamod-->
+                                                <div class="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none w-[500px] h-[500px] rounded-full overflow-hidden [mask-image:_radial-gradient(black,_transparent_60%)]">
+                                                    <div class="h-[200%] animate-endless">
+                                                        <div class="absolute inset-0 [background:_repeating-linear-gradient(transparent,_transparent_48px,_theme(colors.white)_48px,_theme(colors.white)_49px)] blur-[2px] opacity-20"></div>
+                                                        <div class="absolute inset-0 [background:_repeating-linear-gradient(transparent,_transparent_48px,_theme(colors.purple.500)_48px,_theme(colors.purple.500)_49px)]"></div>
+                                                        <div class="absolute inset-0 [background:_repeating-linear-gradient(90deg,transparent,_transparent_48px,_theme(colors.white)_48px,_theme(colors.white)_49px)] blur-[2px] opacity-20"></div>
+                                                        <div class="absolute inset-0 [background:_repeating-linear-gradient(90deg,transparent,_transparent_48px,_theme(colors.purple.500)_48px,_theme(colors.purple.500)_49px)]"></div>
+                                                    </div>
+                                                </div>
+                                                <!--aamod-->
+                                                <div
+                                                    x-show="tab === '1'"
+                                                    x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                                                    x-transition:enter-start="opacity-0 -rotate-[60deg]"
+                                                    x-transition:enter-end="opacity-100 rotate-0"
+                                                    x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 absolute"
+                                                    x-transition:leave-start="opacity-100 rotate-0"
+                                                    x-transition:leave-end="opacity-0 rotate-[60deg]"
+                                                >                                                
+                                                    <div class="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                                                        <svg class="relative fill-slate-200" xmlns="http://www.w3.org/2000/svg" width="23" height="25">
+                                                            <path fill-rule="nonzero" d="M10.55 15.91H.442L14.153.826 12.856 9.91h10.107L9.253 24.991l1.297-9.082Zm.702-8.919L4.963 13.91h7.893l-.703 4.918 6.289-6.918H10.55l.702-4.918Z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    x-show="tab === '2'"
+                                                    x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                                                    x-transition:enter-start="opacity-0 -rotate-[60deg]"
+                                                    x-transition:enter-end="opacity-100 rotate-0"
+                                                    x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 absolute"
+                                                    x-transition:leave-start="opacity-100 rotate-0"
+                                                    x-transition:leave-end="opacity-0 rotate-[60deg]"
+                                                >                                                
+                                                    <div class="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                                                        <svg class="relative fill-slate-200" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+                                                            <path d="M18 14h-2V8h2c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4v2H8V4c0-2.2-1.8-4-4-4S0 1.8 0 4s1.8 4 4 4h2v6H4c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4v-2h6v2c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4ZM16 4c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2h-2V4ZM2 4c0-1.1.9-2 2-2s2 .9 2 2v2H4c-1.1 0-2-.9-2-2Zm4 14c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2h2v2ZM8 8h6v6H8V8Zm10 12c-1.1 0-2-.9-2-2v-2h2c1.1 0 2 .9 2 2s-.9 2-2 2Z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    x-show="tab === '3'"
+                                                    x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                                                    x-transition:enter-start="opacity-0 -rotate-[60deg]"
+                                                    x-transition:enter-end="opacity-100 rotate-0"
+                                                    x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 absolute"
+                                                    x-transition:leave-start="opacity-100 rotate-0"
+                                                    x-transition:leave-end="opacity-0 rotate-[60deg]"
+                                                >                                                
+                                                    <div class="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                                                        <svg class="relative fill-slate-200" xmlns="http://www.w3.org/2000/svg" width="26" height="14">
+                                                            <path fill-rule="nonzero" d="m10 5.414-8 8L.586 12 10 2.586l6 6 8-8L25.414 2 16 11.414z" />
+                                                        </svg>
+                                                    </div>
+                                                </div> 
+                                                <div
+                                                x-show="tab === '4'"
+                                                x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                                                x-transition:enter-start="opacity-0 -rotate-[60deg]"
+                                                x-transition:enter-end="opacity-100 rotate-0"
+                                                x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 absolute"
+                                                x-transition:leave-start="opacity-100 rotate-0"
+                                                x-transition:leave-end="opacity-0 rotate-[60deg]"
+                                            >                                                
+                                                <div class="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                                                    <svg class="relative fill-slate-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>                                         
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section class="relative">
+
+                <!--aamod-->
+                <div class="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-24 -ml-32">
+                    <div class="absolute inset-0 -z-10" aria-hidden="true">
+                        <canvas data-particle-animation data-particle-quantity="6" data-particle-staticity="30"></canvas>
+                    </div>
+                </div>
+
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="pt-16 md:pt-32">
+
+                        <!--aamod-->
+                        <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                            <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Redefine career growth -<br>your journey, your way!</h2>
+                            <p class="text-lg text-slate-400">Thousands of professionals have used CareerLink to pivot industries, land dream roles, and build lifelong skills. For instance, Arpan, a software engineer was stuck in a 9-to-5 rut norm. After joining CareerLink, he built a project portfolio that landed him a dream job.</p>
+                        </div>
+
+                        <!--aamod-->
+                        <div class="relative pb-12 md:pb-20">
+                            <!--aamod-->
+                            <div class="absolute bottom-0 -mb-20 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                                    <defs>
+                                        <linearGradient id="bs2-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                            <stop offset="0%" stop-color="#DB2777" />
+                                            <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#bs2-a)" fill-rule="evenodd" d="m346 898 461 369-284 58z" transform="translate(-346 -898)" />
+                                </svg>
+                            </div>
+                            <!--aamod-->
+                            <div class="grid md:grid-cols-12 gap-6 group" data-highlighter>
+                                <!--aamod-->
+                                <div class="md:col-span-12" data-aos="fade-down">
+                                    <div class="relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                                                <!--aamod-->
+                                                <div class="absolute right-0 top-0 blur-2xl" aria-hidden="true">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="342" height="393">
+                                                        <defs>
+                                                            <linearGradient id="bs-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                                                <stop offset="0%" stop-color="#DB2777" />
+                                                                <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <path fill="url(#bs-a)" fill-rule="evenodd" d="m104 .827 461 369-284 58z" transform="translate(0 -112.827)" opacity=".7" />
+                                                    </svg>
+                                                </div>
+                                                <!--aamod-->
+                                                <div class="absolute flex items-center justify-center bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 h-full aspect-square" aria-hidden="true">
+                                                    <div class="absolute inset-0 translate-z-0 bg-purple-500 rounded-full blur-[120px] opacity-70"></div>
+                                                    <div class="absolute w-1/4 h-1/4 translate-z-0 bg-purple-400 rounded-full blur-[40px]"></div>
+                                                </div>
+    
+    
+                                                <!--aamod-->
+                                                <div class="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0">
+                                                    <div class="mb-5">
+                                                        <div>
+                                                            <h3 class="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">Get Your Personalized Career Playbook</h3>
+                                                            <p class="text-slate-400">Ready to kickstart your journey toward a brighter career future? With our free Career GPS tool, you’ll receive a tailored playbook to guide your unique path to success</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="#0">
+                                                            <span class="relative inline-flex items-center">
+                                                                Try CareerGPS <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--aamod-->
+                                                <div class="relative w-full h-64 md:h-auto overflow-hidden">
+                                                    <img class="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:relative md:left-0 md:translate-x-0" src="./images/feature-image-01.png" width="504" height="700" alt="Feature 01">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--aamod-->
+                                <div class="md:col-span-7" data-aos="fade-down">
+                                    <div class="relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <div class="flex flex-col">
+                                                <!--aamod-->
+                                                <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                                                    <div class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
+                                                </div>
+                                                <!--aamod-->
+                                                <div class="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                                                    <div>
+                                                        <h3 class="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">Learn from Live Masterclass Sessions</h3>
+                                                        <p class="text-slate-400">Join virtual sessions with industry experts who share insider knowledge, emerging trends, and proven strategies to help you succeed.</p>
+                                                    </div>
+                                                    <br>
+                                                    <div>
+                                                        <a class="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="#0">
+                                                            <span class="relative inline-flex items-center">
+                                                                Join a Masterclass<span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--aamod-->
+                                                <div class="relative w-full h-64 md:h-auto overflow-hidden md:pb-8">
+                                                    <img class="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0" src="./images/feature-image-02.png" width="300" height="200" alt="Feature 02">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--aamod-->
+                                <div class="md:col-span-5" data-aos="fade-down">
+                                    <div class="relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <div class="flex flex-col">
+                                                <!--aamod-->
+                                                <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                                                    <div class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
+                                                </div>
+                                                <!--aamod-->
+                                                <div class="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                                                    <div>
+                                                        <h3 class="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">Build Standout Resumes with AI</h3>
+                                                        <p class="text-slate-400">Our AI-powered Resume Builder crafts professional resumes that impress recruiters & allow you to showcase your unique strengths.</p>
+                                                    </div>
+                                                    <br>
+                                                    <div>
+                                                        <a class="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="#0">
+                                                            <span class="relative inline-flex items-center">
+                                                                Create your Resume<span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <!--aamod-->
+                                                <div class="relative w-full h-64 md:h-auto overflow-hidden md:pb-8">
+                                                    <img class="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0" src="./images/feature-image-03.png" width="200" height="200" alt="Feature 03">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section class="relative">
+
+                <!--aamod-->
+                <div class="absolute top-0 -translate-y-1/4 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                        <defs>
+                            <linearGradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                <stop offset="0%" stop-color="#DB2777" />
+                                <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#bs3-a)" fill-rule="evenodd" d="m410 0 461 369-284 58z" transform="matrix(1 0 0 -1 -410 427)" />
+                    </svg>
+                </div>
+
+                
+            </section>
+
+            <!--aamod-->
+            <section>    
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="pt-12 md:pt-20">
+            
+                        <!--aamod-->
+                        <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                            <div>
+                                <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-3">Empower your career</div>
+                            </div>
+                            <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Your Career, Redefined!</h2>
+                            <p class="text-lg text-slate-400">CareerLink isn’t just another platform—it’s a transformative space designed to empower and elevate your career journey. Unlike professional networks that focus solely on connections like Linkedin, we’re here to help you grow, learn, and achieve your ambitions. Think of us as the launchpad that takes you from where you are to where you want to be. No other platform combines community, tools, and innovation like CareerLink.</p>
+                        </div>
+            
+                        <!--aamod-->
+                        <!--aamod-->
+                        <!--aamod-->
+                        <div class="relative before:absolute before:inset-0 before:-translate-x-full before:z-20 before:bg-gradient-to-l before:from-transparent before:to-slate-900 before:to-20% after:absolute after:inset-0 after:translate-x-full after:z-20 after:bg-gradient-to-r after:from-transparent after:to-slate-900 after:to-20%">
+                            <div class="stellar-carousel swiper-container group">
+                                <div class="swiper-wrapper w-fit" data-highlighter>
+                                    <!--aamod-->
+                                    <div class="swiper-slide h-auto relative bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden group/slide">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <!--aamod-->
+                                            <div class="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" aria-hidden="true">
+                                                <canvas data-particle-animation data-particle-quantity="3"></canvas>
+                                            </div>                                            
+                                            <!--aamod-->
+                                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                                                <div class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]"></div>
+                                            </div>
+                                            <div class="flex flex-col p-6 h-full">
+                                                <img class="mb-3" src="./images/carousel-icon-01.svg" width="56" height="56" alt="Icon 01">
+                                                <div class="grow">
+                                                    <div class="font-bold text-lg mb-1">Craft Career Playbook</div>
+                                                    <div class="text-slate-400 mb-3">Navigate Your Professional Path with Personalized Career Insights.</div>
+                                                </div>
+                                                
+                                                <div class="text-right">
+                                                    <a class="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide h-auto relative bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden group/slide">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <!--aamod-->
+                                            <div class="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" aria-hidden="true">
+                                                <canvas data-particle-animation data-particle-quantity="3"></canvas>
+                                            </div>                                            
+                                            <!--aamod-->
+                                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                                                <div class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]"></div>
+                                            </div>
+                                            <div class="flex flex-col p-6 h-full">
+                                                <img class="mb-3" src="./images/carousel-icon-02.svg" width="56" height="56" alt="Icon 01">
+                                                <div class="grow">
+                                                    <div class="font-bold text-lg mb-1">Discover Your Community</div>
+                                                    <div class="text-slate-400 mb-3">Find Your Fit Circle with AI-Powered Career Matchmaking.</div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a class="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto relative bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden group/slide">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <!--aamod-->
+                                            <div class="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" aria-hidden="true">
+                                                <canvas data-particle-animation data-particle-quantity="3"></canvas>
+                                            </div>                                            
+                                            <!--aamod-->
+                                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                                                <div class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]"></div>
+                                            </div>
+                                            <div class="flex flex-col p-6 h-full">
+                                                <img class="mb-3" src="./images/carousel-icon-03.svg" width="56" height="56" alt="Icon 01">
+                                                <div class="grow">
+                                                    <div class="font-bold text-lg mb-1">Collaborate in Circles</div>
+                                                    <div class="text-slate-400 mb-3">Join Focused Like Minded Groups for Real-World Career Growth.</div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a class="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto relative bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden group/slide">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <!--aamod-->
+                                            <div class="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" aria-hidden="true">
+                                                <canvas data-particle-animation data-particle-quantity="3"></canvas>
+                                            </div>                                            
+                                            <!--aamod-->
+                                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                                                <div class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]"></div>
+                                            </div>
+                                            <div class="flex flex-col p-6 h-full">
+                                                <img class="mb-3" src="./images/carousel-icon-04.svg" width="56" height="56" alt="Icon 01">
+                                                <div class="grow">
+                                                    <div class="font-bold text-lg mb-1">Receive Valuable Feedback</div>
+                                                    <div class="text-slate-400 mb-3">Get Support and Guidance from Peers and Mentors in your field.</div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a class="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto relative bg-slate-800 rounded-3xl p-px before:absolute before:w-96 before:h-96 before:-left-48 before:-top-48 before:bg-purple-500 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-20 before:z-30 before:blur-[100px] after:absolute after:inset-0 after:rounded-[inherit] after:opacity-0 after:transition-opacity after:duration-500 after:[background:_radial-gradient(250px_circle_at_var(--mouse-x)_var(--mouse-y),theme(colors.slate.400),transparent)] after:group-hover:opacity-100 after:z-10 overflow-hidden group/slide">
+                                        <div class="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                                            <!--aamod-->
+                                            <div class="absolute inset-0 -z-10 opacity-0 group-[.swiper-slide-active]/slide:opacity-100 group-hover/slide:opacity-100 transition-opacity duration-500 ease-in-out" aria-hidden="true">
+                                                <canvas data-particle-animation data-particle-quantity="3"></canvas>
+                                            </div>
+                                            <!--aamod-->
+                                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                                                <div class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]"></div>
+                                            </div>
+                                            <div class="flex flex-col p-6 h-full">
+                                                <img class="mb-3" src="./images/carousel-icon-05.svg" width="56" height="56" alt="Icon 05">
+                                                <div class="grow">
+                                                    <div class="font-bold text-lg mb-1">Keep Growing Your Network</div>
+                                                    <div class="text-slate-400 mb-3">Expand Connections and Technical Skills Through New Opportunities.</div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a class="text-sm font-medium text-slate-300 hover:text-white inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--aamod-->
+                        <div class="flex mt-8 justify-end">
+                            <button class="carousel-prev relative z-20 w-12 h-12 flex items-center justify-center group">
+                                <span class="sr-only">Previous</span>
+                                <svg class="w-4 h-4 fill-slate-500 group-hover:fill-purple-500 transition duration-150 ease-in-out" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.7 14.7l1.4-1.4L3.8 9H16V7H3.8l4.3-4.3-1.4-1.4L0 8z" />
+                                </svg>
+                            </button>
+                            <button class="carousel-next relative z-20 w-12 h-12 flex items-center justify-center group">
+                                <span class="sr-only">Next</span>
+                                <svg class="w-4 h-4 fill-slate-500 group-hover:fill-purple-500 transition duration-150 ease-in-out" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.3 14.7l-1.4-1.4L12.2 9H0V7h12.2L7.9 2.7l1.4-1.4L16 8z" />
+                                </svg>
+                            </button>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section class="relative">
+                <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+
+                    <!--aamod-->
+                    <div class="absolute top-0 -mt-24 left-0 -ml-16 blur-2xl opacity-70 pointer-events-none -z-10" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                            <defs>
+                                <linearGradient id="bs4-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                    <stop offset="0%" stop-color="#DB2777" />
+                                    <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#bs4-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)" />
+                        </svg>
+                    </div>
+
+                    <div class="pt-16 pb-12 md:pt-32 md:pb-20">
+            
+                        <!--aamod-->
+                        <div class="max-w-3xl pb-12 md:pb-20">
+                            <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Our Unique Features</h2>
+                            <p class="text-lg text-slate-400">We’ve combined and refined our offerings into 9 standout features, divided into three key domains to transform your career journey: Career Navigation, Community Engagement, and Innovative Insights.</p>
+                        </div>
+
+                        <!--aamod-->
+                        <div class="divide-y divide-slate-800">
+                            <!--aamod-->
+                            <div class="py-8 first-of-type:pt-0 last-of-type:pb-0">
+                                <div>
+                                    <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-6">Career Navigation</div>
+                                </div>
+                                <div class="grid md:grid-cols-3 gap-8 md:gap-12 mb-2">
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Tailored Career Advice</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Use our Career GPS assessment to receive your personalized guidance & actionable steps toward long-term career goals.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M15 9a3.841 3.841 0 0 0-2.661 1.545A2.524 2.524 0 0 0 10 9a1 1 0 1 0 0 2c.361 0 .57.279.89 1.284C10.243 13.08 9.441 14 9 14a1 1 0 0 0 0 2 3.841 3.841 0 0 0 2.661-1.545A2.524 2.524 0 0 0 14 16a1 1 0 0 0 0-2c-.361 0-.571-.279-.89-1.284C13.757 11.92 14.559 11 15 11a1 1 0 0 0 0-2Z"/><path d="M10 8a1 1 0 0 0 0-2H7.825c.432-2.421.983-4 2.175-4a1 1 0 0 1 1 1 1 1 0 0 0 2 0 3 3 0 0 0-3-3C7.193 0 6.313 2.9 5.793 6H3a1 1 0 1 0 0 2h2.49c-.506 3.52-1 6-2.49 6a1 1 0 0 1-1-1 1 1 0 0 0-2 0 3 3 0 0 0 3 3c3.367 0 3.964-4.175 4.49-7.858L7.51 8H10Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Interactive Career Tools</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Engage with fun survey quizzes such as “What’s Your Career Persona?” to discover and refine your career path.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7ZM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5ZM15.707 14.293 13.314 11.9a8.019 8.019 0 0 1-1.414 1.414l2.393 2.393a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Salary Insights & Trends</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Gain access to up-to-date salary data, negotiation tips to make informed decisions about your career trajectory.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--aamod-->
+                            <div class="py-8">
+                                <div>
+                                    <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-6">Community Engagement</div>
+                                </div>
+                                <div class="grid md:grid-cols-3 gap-8 md:gap-12 mb-2">
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M2 6H0V2a2 2 0 0 1 2-2h4v2H2v4ZM16 6h-2V2h-4V0h4a2 2 0 0 1 2 2v4ZM14 16h-4v-2h4v-4h2v4a2 2 0 0 1-2 2ZM6 16H2a2 2 0 0 1-2-2v-4h2v4h4v2Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Focused Microcommunities</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Join 'Circles' for project-based learning that enhances your overall portfolio with real-world relevance.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M6.974 14c-.3 0-.7-.2-.9-.5l-2.2-3.7-2.1 2.8c-.3.4-1 .5-1.4.2-.4-.3-.5-1-.2-1.4l3-4c.2-.3.5-.4.9-.4.3 0 .6.2.8.5l2 3.3 3.3-8.1c0-.4.4-.7.8-.7s.8.2.9.6l4 8c.2.5 0 1.1-.4 1.3-.5.2-1.1 0-1.3-.4l-3-6-3.2 7.9c-.2.4-.6.6-1 .6Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Dynamic Testimonials</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Explore rotating video stories & quotes featuring real users, offering insights into CareerLink's impact.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M14 0H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1ZM3 2h10v8H9v4H3V2Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Peer-to-Peer Networking</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Connect with like-minded professionals through tailored networking sessions and one-on-one discussions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--aamod-->
+                            <div class="py-8">
+                                <div>
+                                    <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-6">Innovative Insights</div>
+                                </div>
+                                <div class="grid md:grid-cols-3 gap-8 md:gap-12 mb-2">
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M15.5 11H13a5.022 5.022 0 0 1-3.453-1.4l-1.2 1.607A7.065 7.065 0 0 0 12 12.92v1.586a.5.5 0 0 0 .853.349l3-3A.5.5 0 0 0 15.5 11ZM1 5a5.022 5.022 0 0 1 3.453 1.4l1.205-1.61A7.028 7.028 0 0 0 1 3a1 1 0 1 0 0 2ZM13 5h2.5a.5.5 0 0 0 .354-.853l-3-3A.5.5 0 0 0 12 1.5v1.58a7.032 7.032 0 0 0-4.6 2.72L5 9a5.025 5.025 0 0 1-4 2 1 1 0 0 0 0 2 7.034 7.034 0 0 0 5.6-2.8L9 7a5.025 5.025 0 0 1 4-2Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Integrated AI Assistance</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Rely on cutting-edge AI tools to provide insights and timely recommendations to navigate critical career moments.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M14 14H2a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2ZM7.293 11.707a1 1 0 0 0 1.414 0l5-5a1 1 0 1 0-1.414-1.414L9 8.586V1a1 1 0 1 0-2 0v7.586L3.707 5.293a1 1 0 0 0-1.414 1.414l5 5Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Comprehensive Feedback and Support</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Receive 360º feedback from mentors and peers, ensuring continuous growth through actionable advice.</p>
+                                    </div>
+                                    <!--aamod-->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-1">
+                                            <svg class="shrink-0 fill-slate-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path d="M14.6.085 8 2.885 1.4.085c-.5-.2-1.4-.1-1.4.9v11c0 .4.2.8.6.9l7 3c.3.1.5.1.8 0l7-3c.4-.2.6-.5.6-.9v-11c0-1-.9-1.1-1.4-.9ZM2 2.485l5 2.1v8.8l-5-2.1v-8.8Zm12 8.8-5 2.1v-8.7l5-2.1v8.7Z" />
+                                            </svg>
+                                            <h4 class="font-medium text-slate-50">Live Engagement Opportunities</h4>
+                                        </div>
+                                        <p class="text-sm text-slate-400">Participate in live Q&A sessions with career coaches & industry experts, providing actionable insights in real time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section>    
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="pt-12 md:pt-20">
+            
+                        <!--aamod-->
+                        <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                            <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Testimonials</h2>
+                            <p class="text-lg text-slate-400">Discover what our satisfied clients have to say about their experiences</p>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+
+            <!--aamod-->
+            <section>
+                <div class="max-w-3xl mx-auto px-4 sm:px-6">
+                    <div class="relative pb-12 md:pb-20">
+
+                        <!--aamod-->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-6">
+                            <div class="absolute inset-0 -z-10" aria-hidden="true">
+                                <canvas data-particle-animation data-particle-quantity="10" data-particle-staticity="30"></canvas>
+                            </div>
+                        </div>
+                        
+                        <!--aamod-->
+                        <div class="text-center" x-data="carousel">
+                            <!--aamod-->
+                            <div class="relative h-32 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_40%,theme(colors.white))]">
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] -z-10 pointer-events-none before:rounded-full rounded-full before:absolute before:inset-0 before:bg-gradient-to-b before:from-slate-400/20 before:to-transparent before:to-20% after:rounded-full after:absolute after:inset-0 after:bg-slate-900 after:m-px before:-z-20 after:-z-20">
+                                    <!--aamod-->
+                                    <template x-for="(item, index) in items" :key="index">
+                                        <div
+                                            x-show="active === index"
+                                            class="absolute inset-0 -z-10"
+                                            x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                                            x-transition:enter-start="opacity-0 -rotate-[60deg]"
+                                            x-transition:enter-end="opacity-100 rotate-0"
+                                            x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700"
+                                            x-transition:leave-start="opacity-100 rotate-0"
+                                            x-transition:leave-end="opacity-0 rotate-[60deg]"
+                                        >
+                                            <img class="relative top-11 left-1/2 -translate-x-1/2 rounded-full" :src="item.img" width="56" height="56" :alt="item.name">
+                                        </div>
+                                    </template>                                
+                                </div>
+                            </div>
+                            <!--aamod-->
+                            <div class="mb-10">
+                                <div class="relative flex flex-col transition-all duration-150 delay-300 ease-in-out" x-ref="testimonials">
+                                    <!--aamod-->
+                                    <template x-for="(item, index) in items" :key="index">
+                                        <div
+                                            x-show="active === index"
+                                            x-transition:enter="transition ease-in-out duration-500 delay-200 order-first"
+                                            x-transition:enter-start="opacity-0 -translate-x-4"
+                                            x-transition:enter-end="opacity-100 translate-x-0"
+                                            x-transition:leave="transition ease-out duration-300 delay-300 absolute"
+                                            x-transition:leave-start="opacity-100 translate-x-0"
+                                            x-transition:leave-end="opacity-0 translate-x-4"
+                                        >
+                                            <div class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60" x-text="item.quote"></div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                            <!--aamod-->
+                            <div class="flex flex-wrap justify-center -m-1.5">
+                                <!--aamod-->
+                                <template x-for="(item, index) in items" :key="index">
+                                    <button
+                                        class="btn-sm m-1.5 text-xs py-1.5 text-slate-300 transition duration-150 ease-in-out [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none"
+                                        :class="active === index ? 'opacity-100' : 'opacity-30 hover:opacity-60'"
+                                        @click="active = index; stopAutorotate();"
+                                    >
+                                        <span class="relative">
+                                            <span class="text-slate-50" x-text="item.name"></span> <span class="text-slate-600">-</span> <span x-text="item.role"></span>
+                                        </span>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+                        <!--aamod-->
+                        <script>
+                            document.addEventListener('alpine:init', () => {
+                                Alpine.data('carousel', () => ({
+                                    active: 0,
+                                    autorotate: true,
+                                    autorotateTiming: 7000,
+                                    items: [
+                                        {
+                                            img: './images/testimonial-01.jpg',
+                                            quote: "Careerlink has revolutionized the way we connect with top talent. Its innovative tools and vast network have elevated our recruitment efforts to new heights.",
+                                            name: 'Natalie I. Cruz',
+                                            role: 'Director, SAB'
+                                        },
+                                        {
+                                            img: './images/testimonial-02.jpg',
+                                            quote: "Careerlink platform's design and user experience has surpassed expectations in design and strategic functionality, playing a vital role in our talent acquisition and recruitment efforts.",
+                                            name: 'Chris R. Glass',
+                                            role: 'VP, Connect'
+                                        },
+                                        {
+                                            img: './images/testimonial-03.jpg',
+                                            quote: "Careerlink has revolutionized our organization. It's a unified hub for membership, resources, and initiatives. Thanks to Careerlink, our community thrives, and our gratitude is immeasurable.",
+                                            name: 'Malvin Perry',
+                                            role: 'Vice President, SAB'
+                                        },
+                                    ],
+                                    init() {
+                                        if (this.autorotate) {
+                                            this.autorotateInterval = setInterval(() => {
+                                                this.active = this.active + 1 === this.items.length ? 0 : this.active + 1
+                                            }, this.autorotateTiming)
+                                        }
+                                        this.$watch('active', callback => this.heightFix())
+                                    },
+                                    stopAutorotate() {
+                                        clearInterval(this.autorotateInterval)
+                                        this.autorotateInterval = null
+                                    },
+                                    heightFix() {
+                                        this.$nextTick(() => {
+                                            this.$refs.testimonials.style.height = this.$refs.testimonials.children[this.active + 1].offsetHeight + 'px'
+                                        })
+                                    }
+                                }))
+                            })
+                        </script>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!--aamod-->
+            <section>
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="relative px-8 py-12 md:py-20 rounded-[3rem] overflow-hidden">
+                        <!--aamod-->
+                        <div class="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
+                            <div class="absolute inset-0 translate-z-0 bg-purple-500 rounded-full blur-[120px] opacity-70"></div>
+                            <div class="absolute w-1/4 h-1/4 translate-z-0 bg-purple-400 rounded-full blur-[40px]"></div>
+                        </div>
+                        <!--aamod-->
+                        <div class="absolute bottom-0 translate-y-1/2 left-0 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                                <defs>
+                                    <linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                        <stop offset="0%" stop-color="#DB2777" />
+                                        <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#bs5-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)" />
+                            </svg>
+                        </div>
+                        <!--aamod-->
+                        <div class="max-w-3xl mx-auto text-center">
+                            <div>
+                                <div class="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-3">Empower your career</div>
+                            </div>
+                            <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Take control of your future</h2>
+                            <p class="text-lg text-slate-400 mb-8">Join a dynamic community empowered by AI tools & expert mentorship to tailor your unique career path. When the conventional route isn’t for you, redefine productivity with CareerLink.</p>
+                            <div>
+                                <a class="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white transition duration-150 ease-in-out group" href="#0">
+                                    Get Started <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+        </main>
+<br>
+<br>
+<br>
+
+
+        <!--aamod-->
+        <footer>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+                <!--aamod-->
+                <div class="grid sm:grid-cols-12 gap-8 py-8 md:py-12">
+        
+                    <!--aamod-->
+                    <div class="sm:col-span-12 lg:col-span-4 order-1 lg:order-none">
+                        <div class="h-full flex flex-col sm:flex-row lg:flex-col justify-between">
+                            <div class="mb-4 sm:mb-0">
+                                <div class="mb-4">
+                                    <!--aamod-->
+                                    <a class="inline-flex" href="index.html" aria-label="Cruip">
+                                        <img src="./images/logo.svg" width="38" height="38" alt="Stellar">
+                                    </a>
+                                </div>
+                                <div class="text-sm text-slate-300">&copy; 2024 Careerlink.ai <span class="text-slate-500">-</span> All rights reserved.</div>
+                            </div>
+                            <!--aamod-->
+                        
+                        </div>
+                    </div>
+        
+                    <!--aamod-->
+                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+                        <h6 class="text-sm text-slate-50 font-medium mb-2">About Us
+                    </h6>
+                        <ul class="text-sm space-y-2">
+                            <li>
+                                <a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#0">Locations</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        
+                    <!--aamod-->
+                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+                        <h6 class="text-sm text-slate-50 font-medium mb-2">FAQs</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>
+                                <a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#0">Social Media</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        
+                    <!--aamod-->
+                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+                        <h6 class="text-sm text-slate-50 font-medium mb-2">Network</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>
+                                <a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#0">Privacy Policy</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        
+                    <!--aamod-->
+                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+                        <h6 class="text-sm text-slate-50 font-medium mb-2">Updates</h6>
+                        <ul class="text-sm space-y-2">
+                            <li>
+                                <a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="#0">Documentation</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
